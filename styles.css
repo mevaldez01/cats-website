@@ -48,6 +48,24 @@ main {
     padding: 2rem;
 }
 
+#accordian {
+    margin-top: 20px;
+}
+
+#accordian h3 {
+    background-color: #f0f0f0;
+    padding: 10p;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#accordian div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+
 #gallery-slider {
     margin-top:20px;
 }

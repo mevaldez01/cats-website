@@ -19,3 +19,24 @@ header {
     text-align: center;
     padding: 1rem;
 }
+
+nav {
+    background-color: #555;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+

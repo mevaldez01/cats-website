@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats Website</title>
-    <!-- Link to CSS file-->
-     <link rel="stylesheet" href="styles.css">
-     <!-- Link to jQuery UI CSS -->
-
-      <!-- Link to jQuery -->
-       <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <!-- Link to jQuery UI -->
-        <script src="http://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Cats Flexbox Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 <body>
     <header>
-        <h1> Cats Website</h1>
+        <h1>Cats Flexbox Website</h1>
     </header>
     <nav>
         <ul>
@@ -25,47 +19,52 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="flex-column">
         <section id="home" class="section">
-            <h2>Home</h2>
-            <p>Welcome to our Cats Website! Here you can find everything about our lovely feline friends.</p>
+            <h2>Welcome Home</h2>
+            <p>Welcome to our Cats Flexbox Website! Here you can find everything about our lovely feline friends.</p>
         </section>
         <section id="gallery" class="section">
             <h2>Gallery</h2>
-            <div id="gallery-slider">
-                <h3>Image Slider</h3>
-                <div>
-                    <img src="images/image1.jpg" alt="kitten">
-                </div>
-                <div>
-                    <img src="images/image2.jpg" alt="cute kitten">
-                </div>
-                <div>
-                    <img src="images/image3.jpg" alt="cutest kitten">
-                </div>
+            <div class="gallery-flex">
+                <div><img src="images/image1.jpg/" alt="Cat 1"></div>
+                <div><img src="images/image2.jpg/" alt="Cat 2"></div>
+                <div><img src="images/image3.jpg/" alt="Cat 3"></div>
             </div>
         </section>
         <section id="about" class="section">
-            <h2>About</h2>
-            <div id="accordian">
-                <h3>Section 1</h3>
+            <h2>About Us</h2>
+            <div id="accordion">
+                <h3>Our Mission</h3>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ipsum et massa feugiat fringilla.
-                        Integer vel ultricies odio. Nullam eu dolor nec felis tempus eleifend vel at metus. 
-                        Integer accumsan erat at dolor fermentum hendrerit. </p>
+                    <p>We love cats and aim to provide the best content about our furry friends.</p>
                 </div>
-                <h3>Section 2</h3>
+                <h3>Our Team</h3>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ipsum et massa feugiat fringilla.
-                        Integer vel ultricies odio. Nullam eu dolor nec felis tempus eleifend vel at metus. 
-                        Integer accumsan erat at dolor fermentum hendrerit. </p>
+                    <p>We are a team of cat enthusiasts who work hard to bring you the latest and greatest cat content.</p>
+                </div>
+                <h3>Contact Us</h3>
+                <div>
+                    <p>You can contact us at cats@catwebsite.com.</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Cats Website. All Rights Reserved.</p>
+        <p>&copy; 2024 Cats Flexbox Website. All Rights Reserved.</p>
     </footer>
-    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Initialize accordion
+        $("#accordion").accordion({
+            collapsible: true,
+            active: false
+        });
+    });
+    </script>
 </body>
 </html>
